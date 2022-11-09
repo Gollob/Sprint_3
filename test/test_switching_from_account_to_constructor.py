@@ -3,7 +3,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 
-class Testswitching:
+class Test_switching:
     def test_go_to_account_page(self, login):
         login.find_element(By.XPATH, "//p[contains(text(),'Личный Кабинет')]").click()   # Кнопка «Личный Кабинет»
         login.find_element(By.XPATH, "//p[contains(text(),'Конструктор')]").click()   # Кнопка «Конструктор»

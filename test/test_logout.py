@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
-class Testlogout:
+class Test_logout:
     def test_logout(self, login):
         login.find_element(By.XPATH, "//p[contains(text(),'Личный Кабинет')]").click()  # Кнопка «Личный Кабинет»
         WebDriverWait(login, 3).until(expected_conditions.visibility_of_element_located((By.XPATH, "//button[contains(text(),'Выход')]")))  # явное ожидание по кнопке «Выход»
