@@ -3,7 +3,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 
-class Testsectionconstructor:
+class Test_section_constructor:
     def test_section_constructor_bun(self, login):
         login.find_element(By.XPATH, "//p[contains(text(),'Конструктор')]").click() # Кнопка «Конструктор»
         login.find_element(By.XPATH, "//body/div[@id='root']/div[1]/main[1]/section[1]/div[1]/div[2]").click() # Кнопка «Соусы», нужно для того чтобы кнопка «Булки» была доступна
